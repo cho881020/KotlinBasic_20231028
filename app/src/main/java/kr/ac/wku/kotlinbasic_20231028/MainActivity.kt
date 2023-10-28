@@ -78,8 +78,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnCondition.setOnClickListener {
 
-            // 사용자의 나이를 val에 저장
-            val userAge = 25
+            // 사용자의 나이를 val에 저장 => EditText를 통해서 입력 받자.
+
+            // EditText는 .toString()으로 String입력값을 받아오는 역할.
+            // Int로 변환 => Casting 필요  =>  String변수.toInt() 실행
+
+            val userAge = binding.edtUserAge.text.toString().toInt()
 
             // 20살 이상? "성인" 문구 토스트로
 
