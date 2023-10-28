@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "kr.ac.wku.kotlinbasic_20231028"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "kr.ac.wku.kotlinbasic_20231028"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
