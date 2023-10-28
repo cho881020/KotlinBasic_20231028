@@ -39,5 +39,27 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        binding.btnVariable.setOnClickListener {
+
+            // 코틀린 변수 문법 연습
+
+            // 내 이름 저장할 변수 (String) 생성 => 변동 가능성 있다
+
+            var myName : String
+
+            // 내 이름을 저장
+
+            myName = "조경진"
+
+            // 이름 변경 => 진경조 (역순)  =>  var로 변수를 선언했기 때문에 가능.
+            
+            myName = "진경조"
+
+            Toast.makeText(this, myName, Toast.LENGTH_SHORT).show()  // 진경조 문구 토스트
+
+        }
+
+
+
     }
 }
